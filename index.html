@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio de listas anidadas</title>
-</head>
-<body>
-    <header>
-        <H1>Programación Web Full Stack</H1>
-    </header>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <header><H1>Formulario de registro</H1></header>
+    <form>
+        <br>
+           <label for="nombre">Nombre:</label>
+           <input type="text" id="name" name="user_name">
+        </br>
 
-    <main>
-        <h2>Modulos de cursada</h2>
+           <br>
+           <label for="apellido">Apellido:</label>
+           <input type="text" id="apellido" name="apellido">
+           </br>
 
-        <ol type="1"> 
-            <li>Diseño Web:</li>
-                <ul>
-                    <li type="circle"> HTML</li>
-                    <li type="circle">CSS</li>
-                    <li type="circle">Git y Github</li>
-                </ul>
-            <li> Programación Web:</li>
-                <ul>
-                    <li type="circle">Javascript</li>
-                </ul>
-            <li>Programación Web Avanzada:</li>
-                <ul>
-                    <li type="circle">ReactJs</li>
-                </ul>
-            <li>Backend:</li>
-                <ul>
-                    <li type="circle">NodeJs</li>
-                    <li type="circle">Bases de datos</li>
-                </ul>
-            </ol> 
+        <p>Modalidad de cursada:
+           <input type="radio" name="texto" value="On-Demand">On-Demand
+           <input type="radio" name="texto" value="En vivo">En vivo
+        </p>
 
-        <h2>Modalidad de cursada</h2>
-        <ul>
+           <br>
+           <label for="email">Correo:</label>
+           <input type="email" id="email" name="email">
+           </br>
 
-            <h3><li>Contenidos en vivo</li></h3>
-            <ul>
-                <li type="circle">NClase online en zoom</li>
-                <li type="circle">Meetups</li>
-                <li type="circle">Clases de repaso</li>
-            </ul>
+           <br>
+           <input name="opciones" type="checkbox"/>Deseo recibir informacion sobre nuevos posteos en la plataforma Nucba.
+           </br>
+           <br>
+           <input name="opciones" type="checkbox"/>Declaro que lei los terminos y condiciones y estoy listo para convertirme en desarrollador web Full Stack.
+           </br>
+           <br>
+           <button type="submit">Enviar</button>
+           </br>
 
-        <h3><li>Contenido Teorico-practico</li></h3>
-        <ol>
-            <li type="circle">Teorico</li>
-            <ul>
-            <li type="square">Documentaciones</li>
-            <li type="square">Articulos de interes</li>
-            </ul>
-
-            <li type="circle">Practico</li>
-            <ul>
-            <li type="square">Desafios</li>
-            <li type="square">Entregas</li>
-            </ul>
-        </ol>
-    </main>
-</body>
+       </form>
+    </body>
+</html>
